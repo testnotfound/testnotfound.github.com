@@ -12,7 +12,7 @@ Loop over books and present only records in which `read` is `true`
 
 {% for book in site.data.books %}
 {% if book.read == true %}
-* [{{book.author}}, {{book.title}}]({{ book.title | datapage_url: 'all-books' }})
+* [{{book.author}}, {{book.title}}]({{ book.title | datapage_url: '/all-books' }})
 {% endif %}
 {% endfor %}
 
@@ -23,6 +23,6 @@ Loop over books and present only records in which `read` is `false`.
 
 {% for book in site.data.books %}
 {% if book.read == false %}
-* [{{book.author}}, {{book.title}}]({{ book.title | datapage_url: 'all-books' }})
+* [{{book.author}}, {{book.title}}]({{ book.title | datapage_url: '/all-books' }})
 {% endif %}
 {% endfor %}
