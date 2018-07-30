@@ -16,8 +16,6 @@ test:
     - bundle exec jekyll build
     - bundle exec htmlproofer ./_site --only-4xx --allow-hash-href
 
-exclude: [vendor]
-
 deployment:
   production:
     branch: dev
